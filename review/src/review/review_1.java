@@ -48,7 +48,7 @@ public class review_1 {
 			double total = 40 * luong + tangca*1.5*luong;
 			System.out.println("tiền lương khi được tăng ca là:" + total);
 		}else {
-			double total = hlam * luong;
+			double  total = hlam * luong;
 			System.out.println("tiền lương ko tang ca" + total);
 		}
 	}
