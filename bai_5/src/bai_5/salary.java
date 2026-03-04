@@ -15,7 +15,7 @@ public class salary {
 			System.out.println("tiền lương khi được tăng ca là:" + total);
 		}else {
 			double  total = hlam * luong;
-			System.out.println("tiền lương ko tang ca:" + total);
+			System.out.println("tiền lương ko tang ca: " + total);
 
 		}
 	}
