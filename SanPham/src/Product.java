@@ -1,11 +1,8 @@
 public class Product {
-
     private String maSP;
     private String tenSP;
     private double gia;
     private int soLuong;
-
-    // Constructor mặc định
     public Product() {
         this.maSP = "SP000";
         this.tenSP = "Chua co ten";
@@ -71,12 +68,9 @@ public class Product {
         }
     }
 
-    // Tính thành tiền
     public double tinhThanhTien() {
         return this.gia * this.soLuong;
     }
-
-    // Hiển thị thông tin
     public void hienThiThongTin() {
         System.out.println("Ma SP: " + this.maSP);
         System.out.println("Ten SP: " + this.tenSP);
