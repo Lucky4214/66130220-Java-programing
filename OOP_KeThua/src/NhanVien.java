@@ -31,6 +31,25 @@ public class NhanVien {
 			//return "NhanVien [maNV=" + maNV + ", hoTen=" + hoTen + ", luongCoBan=" + luongCoBan + "]";
 			
 		}
+		//getter và setter
+		public String getMaNV() {
+			return maNV;
+		}
+		public void setMaNV(String maNV) {
+			this.maNV = maNV;
+		}
+		public String getHoTen() {
+			return hoTen;
+		}
+		public void setHoTen(String hoTen) {
+			this.hoTen = hoTen;
+		}
+		public double getLuongCoBan() {
+			return luongCoBan;
+		}
+		public void setLuongCoBan(double luongCoBan) {
+			this.luongCoBan = luongCoBan;
+		}
 		
 //		public NhanVien() {
 //		}
@@ -39,6 +58,5 @@ public class NhanVien {
 //			this.maNV = maNhanVien;
 //			this.hoTen = tenNhanVien;
 //			this.luongCoBan = luongCoBan;
-//		}
-		
+//		}		
 }
