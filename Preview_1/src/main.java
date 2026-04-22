@@ -12,10 +12,11 @@ public class main {
         danhSach.add(new MonHoc("Ngoại ngữ", 6.2));
         //in tiêu đề 
         System.out.printf("%-15s %-10s\n", "Môn", "Điểm");
-        System.out.println("----------------------------");
+        System.out.println("-------------------------");
         //in danh sách
         for(MonHoc mHoc : danhSach) {
         	System.out.printf("%-15s %-10.2f\n",mHoc.tenMon, mHoc.diem);
+        	
         }
 
 	}
