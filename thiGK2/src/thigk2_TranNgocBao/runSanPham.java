@@ -48,12 +48,18 @@ public class runSanPham {
 	}
 	//chạy main
 	public static void main(String[] args) {
-		ArrayList<SanPham> dsSanPham = nhapDanhSachSanPham();
-		System.out.println("\n= DANH SÁCH SẢN PHẨM =");
-		for (SanPham sp : dsSanPham) {
-			System.out.println(sp);
+			// danh sách có sẵn
+			ArrayList<SanPham> dsSanPham = taoDanhSachSanPham();
+			// nhập thêm từbàn phím
+			ArrayList<SanPham> dsNhapThem = nhapDanhSachSanPham();
+			// gộp lại
+			dsSanPham.addAll(dsNhapThem);
+			// in ds
+			System.out.println("\n= DANH SÁCH SẢN PHẨM =");
+			for (SanPham sp : dsSanPham) {
+				System.out.println(sp);
+			}
+			// lọc thực phẩm chức năng
+			inThucPhamChucNang(dsSanPham);
 		}
-		//chạy phân loại
-		inThucPhamChucNang(dsSanPham);
 	}
-}
